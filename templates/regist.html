@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>新規会員登録ページ</h1>
+<form action="/regist" method="POST">
+    名前：<input type="text" name="name">
+    パスワード：<input type="password" name="password">
+    <input type="submit" name="save" value="会員登録">
+</form>
+
+{% endblock %}

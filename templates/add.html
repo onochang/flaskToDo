@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>タスク入力ページ</h1>
+<form action="/add" method="post">
+    <input type="text" size="100" maxlength="100" name="task">
+    <input type="submit" name="save" value="send">
+</form>
+
+{% endblock %}
